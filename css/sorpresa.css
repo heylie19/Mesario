@@ -59,13 +59,6 @@ body {
 }
 
 
-.ruleta-container {
-  margin: 30px auto;
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
 #ruleta {
   border-radius: 50%;
   border: 5px solid #f67280;
@@ -123,3 +116,25 @@ body {
     height: 250px;
   }
 }
+
+.ruleta-container {
+  margin: 30px auto;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resultado {
+  margin-top: 10px; /* separa el mensaje del botón */
+  order: 1;          /* coloca el mensaje arriba del botón */
+}
+
+#girarBtn {
+  margin-top: 20px;
+  order: 2;          /* botón debajo del mensaje */
+}
+
+
