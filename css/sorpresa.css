@@ -10,7 +10,7 @@ body {
 }
 
 .h1{
-    color: #e75480;
+    color: #dc0606;
 }
 
 .header {
@@ -149,6 +149,7 @@ body {
   margin-top: 20px;
   order: 2;          /* botón debajo del mensaje */
 }
+
 
 
 
