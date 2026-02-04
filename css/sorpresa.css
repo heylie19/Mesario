@@ -1,0 +1,125 @@
+/* ===============================
+CSS del módulo Sorpresa - estilo igual a otros módulos
+=============================== */
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(180deg, #ffe6ef, #ffffff);
+  color: #333;
+}
+
+.h1{
+    color: #e75480;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  z-index: 100;
+}
+
+.logo {
+  font-weight: bold;
+  color: #e75480;
+}
+
+.nav a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.nav a.active {
+  color: #e75480;
+  font-weight: 600;
+}
+
+.section.inicio {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.section.inicio h1 {
+  font-size: 2rem;
+  color: #e75480;
+  margin-bottom: 12px;
+}
+
+
+.ruleta-container {
+  margin: 30px auto;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+#ruleta {
+  border-radius: 50%;
+  border: 5px solid #f67280;
+  display: block;
+  margin: 0 auto;
+  transition: transform 4s ease-out;
+}
+
+/* Indicador de ruleta */
+#indicador {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #355c7d;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#girarBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f67280;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#girarBtn:hover {
+   background-color: #f8b195;
+
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #355c7d;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .ruleta-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  #ruleta {
+    width: 250px;
+    height: 250px;
+  }
+}

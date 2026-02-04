@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorpresa 🎁</title>
+  <link rel="stylesheet" href="css/sorpresa.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header class="header">
+    <div class="logo">💖 Mesario</div>
+    
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="momentos.html">Momentos</a>
+      <a href="frase.html">Frase</a>
+      <a href="sorpresa.html" class="active">Sorpresa</a>
+      <a href="extra.html">Una cosita más</a>
+    </nav>
+  </header>
+
+  <!-- Sección de ruleta de regalos -->
+  <main class="section sorpresa">
+    <h1 class="h1"><center>Gira la ruleta y gana un regalo 🎁</center></h1>
+    <div class="ruleta-container">
+      <canvas id="ruleta" width="300" height="300"></canvas>
+      <center><button id="girarBtn">Girar Ruleta</button></center>
+    </div>
+    <p id="resultado"></p>
+  </main>
+
+  <script src="js/sorpresa.js"></script>
+</body>
+</html>
