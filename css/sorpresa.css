@@ -42,6 +42,19 @@ body {
   font-weight: 600;
 }
 
+.nav {
+  display: flex;
+  flex-wrap: wrap; /* permite que los elementos salten de línea si no caben */
+  justify-content: center; /* opcional: centra los elementos */
+  gap: 10px; /* separa un poco los enlaces */
+}
+
+.nav a {
+  white-space: normal; /* permite que el texto haga salto de línea */
+  text-align: center;  /* centra el texto dentro del enlace */
+}
+
+
 .section.inicio {
   min-height: 90vh;
   display: flex;
@@ -136,5 +149,6 @@ body {
   margin-top: 20px;
   order: 2;          /* botón debajo del mensaje */
 }
+
 
 
